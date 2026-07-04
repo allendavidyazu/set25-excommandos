@@ -728,3 +728,41 @@ padding:30px 25px;
 }
 
 }
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+
+  .navbar{
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .logo{
+      justify-content: center;
+  }
+
+  .nav-links{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+  }
+
+  .hero h1{
+      font-size: 48px;
+  }
+
+  .values{
+      grid-template-columns: 1fr;
+  }
+
+  .about,
+  .why-join{
+      padding: 60px 20px;
+  }
+
+  body{
+      overflow-x: hidden;
+  }
+}
