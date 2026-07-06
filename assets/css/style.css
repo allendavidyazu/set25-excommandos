@@ -766,3 +766,64 @@ padding:30px 25px;
       overflow-x: hidden;
   }
 }
+
+/* ===========================
+   HAMBURGER MENU
+=========================== */
+
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    cursor:pointer;
+    color:#A40000;
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:18px 20px;
+    }
+
+    .logo img{
+        width:55px;
+        height:55px;
+    }
+
+    .logo-text h2{
+        font-size:24px;
+    }
+
+    .logo-text p{
+        font-size:14px;
+        letter-spacing:2px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:white;
+        flex-direction:column;
+        text-align:center;
+        padding:20px 0;
+        box-shadow:0 8px 20px rgba(0,0,0,.08);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        margin:12px 0;
+    }
+}
